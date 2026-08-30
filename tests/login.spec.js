@@ -23,6 +23,7 @@ test(`Login with ${data.username} to CGI TimeSheet`, async ({page})=> {
     //Work on New Page
     await timesheetpage.waitForLoadState('networkidle');
     await timesheetpage.getByRole('textbox', { name: 'User ID' }).fill('nitesh.haritwal');
-
+    console.log("I just added new file");
+    
     });
 }
